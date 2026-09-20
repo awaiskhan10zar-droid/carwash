@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Wash</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#06131d;color:#fff;line-height:1.5}
+nav{height:76px;background:#04101a;display:flex;align-items:center;justify-content:space-between;padding:0 7%;position:sticky;top:0;z-index:5;border-bottom:1px solid #12344a}
+.logo{font-size:28px;font-weight:900;font-style:italic;color:#fff}
+.logo span{color:#00aaff}.logo small{display:block;font-size:9px;letter-spacing:4px;color:#00aaff;text-align:center}
+nav a{color:#ddd;text-decoration:none;margin:0 15px}nav a:hover{color:#00aaff}
+.btn{display:inline-block;padding:13px 22px;border-radius:30px;text-decoration:none;font-weight:bold}
+.whatsapp{background:#12c96b;color:#fff}.call{border:2px solid #009dff;color:#fff}
+.hero{min-height:620px;padding:90px 7%;display:flex;align-items:center;background:linear-gradient(90deg,#02080d 35%,rgba(2,8,13,.55)),url('carwash.jpg') center/cover}
+.hero-content{max-width:650px}.tag{color:#00aaff;font-weight:bold;letter-spacing:2px}
+h1{font-size:clamp(48px,7vw,82px);line-height:.95;margin:18px 0}.blue{color:#00aaff}
+.hero p{font-size:20px;color:#d8e4ea;max-width:580px;margin-bottom:28px}
+.buttons{display:flex;gap:14px;flex-wrap:wrap}
+section{padding:70px 7%}.title{text-align:center;font-size:40px;margin-bottom:42px}.title span{color:#00aaff}
+.services{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.card{padding:28px 18px;text-align:center;border:1px solid #075078;border-radius:15px;background:#071d2a}
+.icon{font-size:42px;margin-bottom:12px}.card h3{margin-bottom:8px}.card p{color:#a9bac4}
+.gallery{background:#f4f7f9;color:#06131d}.gallery-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.gallery img{width:100%;height:180px;object-fit:cover;border-radius:12px}
+.contact{text-align:center;background:linear-gradient(135deg,#06131d,#0b2b3e)}.contact p{color:#b9cbd5;margin:10px 0 25px}.number{font-size:30px;font-weight:bold;margin-bottom:22px}
+footer{text-align:center;padding:25px;background:#020a10;color:#9aabb5}
+@media(max-width:900px){.services{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}nav .links{display:none}.hero{min-height:600px}}
+@media(max-width:520px){.services,.gallery-grid{grid-template-columns:1fr}.hero{padding:70px 6%}h1{font-size:50px}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">CAR<span>WASH</span><small>CLEAN • SHINE • DRIVE</small></div>
+  <div class="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+  <a class="btn whatsapp" href="https://wa.me/923138570643" target="_blank">WhatsApp</a>
+</nav>
+
+<header class="hero" id="home">
+ <div class="hero-content">
+  <div class="tag">CLEAN CAR • BETTER DRIVE</div>
+  <h1>PROFESSIONAL<br><span class="blue">CAR WASH</span></h1>
+  <p>We make your car look fresh, clean and shiny again. Professional washing, interior cleaning and premium care.</p>
+  <div class="buttons">
+   <a class="btn whatsapp" href="https://wa.me/923138570643" target="_blank">💬 Chat on WhatsApp</a>
+   <a class="btn call" href="tel:03138570643">☎ 03138570643</a>
+  </div>
+ </div>
+</header>
+
+<section id="services">
+ <h2 class="title">Our <span>Services</span></h2>
+ <div class="services">
+  <div class="card"><div class="icon">🚘</div><h3>Exterior Wash</h3><p>Remove dust and dirt for a clean finish.</p></div>
+  <div class="card"><div class="icon">🧹</div><h3>Interior Cleaning</h3><p>Fresh and clean interior for your drive.</p></div>
+  <div class="card"><div class="icon">✨</div><h3>Wax & Polish</h3><p>Extra shine and protection for your car.</p></div>
+  <div class="card"><div class="icon">⚙️</div><h3>Engine Cleaning</h3><p>Careful cleaning around the engine area.</p></div>
+  <div class="card"><div class="icon">🛞</div><h3>Tyre Shine</h3><p>Clean tyres with a polished finish.</p></div>
+ </div>
+</section>
+
+<section class="gallery" id="gallery">
+ <h2 class="title">Our <span>Work</span></h2>
+ <div class="gallery-grid">
+  <img src="carwash.jpg"><img src="carwash.jpg"><img src="carwash.jpg"><img src="carwash.jpg"><img src="carwash.jpg">
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <h2 class="title">Contact <span>Us</span></h2>
+ <p>For booking and car wash details, contact us on WhatsApp or call.</p>
+ <div class="number">03138570643</div>
+ <a class="btn whatsapp" href="https://wa.me/923138570643" target="_blank">💬 Message on WhatsApp</a>
+</section>
+
+<footer>🚗 Clean Cars • Happy Customers &nbsp; | &nbsp; WhatsApp: 03138570643</footer>
+</body>
+</html>
